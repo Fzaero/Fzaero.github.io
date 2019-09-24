@@ -22,8 +22,7 @@ video: https://www.youtube.com/embed/uWPr7IFT_9k
 </center>
 <br>
 
-<img height=200px style="margin: 0px -120px" id="header_img" src="{{page.header_img}}" /><br>
-
+<img height="200px" style="margin: 0px -120px" id="header_img" src="{{page.header_img}}"/><br>
 <br>
 <h2>Abstract</h2>
 <p>
