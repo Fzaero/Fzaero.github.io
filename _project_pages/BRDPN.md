@@ -21,7 +21,9 @@ video: https://www.youtube.com/embed/uWPr7IFT_9k
 	<a href="https://vision.cs.hacettepe.edu.tr/"><b><sup>2</sup>HUCVL</b></a> <br>
 </center>
 <br>
+
 <img height=200px style="margin: 0px -120px" id="header_img" src="{{page.header_img}}" /><br>
+
 <br>
 <h2>Abstract</h2>
 <p>
