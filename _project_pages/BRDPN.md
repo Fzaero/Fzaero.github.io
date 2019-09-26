@@ -69,7 +69,6 @@ objects are not explicitly given but instead predicted from observations.
 
 <h2>Code and Dataset</h2>
 
-<p>Coming Soon</p>
-
+<p>Code and dataset is available at https://github.com/Fzaero/BRDPN</p>
 
 <br/>
