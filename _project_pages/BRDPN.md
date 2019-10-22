@@ -5,6 +5,8 @@ permalink: /BRDPN/
 header_img: /assets/images/BRDPN.png
 pdf: /assets/papers/BRDPN.pdf
 video: https://www.youtube.com/embed/uWPr7IFT_9k
+video2: https://www.youtube.com/embed/rvbmZlVEwHk
+
 ---
 
 <div id="primarycontent">
@@ -70,5 +72,15 @@ objects are not explicitly given but instead predicted from observations.
 <h2>Code and Dataset</h2>
 
 <p>Code and dataset is available at <a href="https://github.com/Fzaero/BRDPN"><em>https://github.com/Fzaero/BRDPN</em></a></p>
+
+<br/>
+
+<h2>Further Experiments</h2>
+
+<p> In here, we model trajectory of PCB given up to 4 obstacles next to its sides. Physic predictor can predict trajectory(position and quaternion) of lever-upped PCB, given 500 training trajectory.</p> 
+
+<div class="video">
+    <iframe width="560" height="315" src="{{page.video2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <br/>
