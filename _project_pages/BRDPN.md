@@ -57,7 +57,7 @@ objects are not explicitly given but instead predicted from observations.
 
 <h2>Paper</h2>
 <p>A. E. Tekden, A. Erdem, E. Erdem, M. Imre, M. Y. Seker and E. Ugur <br/>
-<a href="{{page.pdf}}"><em>Belief Regulated Dual Propagation Nets for Learning Action  Effects on Articulated Multi-Part Object</em></a></p>
+<a href="{{page.pdf}}"><em>Belief Regulated Dual Propagation Nets for Learning Action Effects on Groups of Articulated Objects</em></a></p>
 
 
 <br/>
