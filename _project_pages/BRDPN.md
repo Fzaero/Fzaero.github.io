@@ -6,6 +6,7 @@ header_img: /assets/images/BRDPN.png
 pdf: /assets/papers/BRDPN.pdf
 video: https://www.youtube.com/embed/uWPr7IFT_9k
 video2: https://www.youtube.com/embed/rvbmZlVEwHk
+video3: https://www.youtube.com/embed/1U3PmZ0m_0I
 
 ---
 
@@ -68,6 +69,14 @@ objects are not explicitly given but instead predicted from observations.
     <iframe width="560" height="315" src="{{page.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <br/>
+
+<h2>ICRA Conference Presentation</h2>
+
+<div class="video">
+    <iframe width="560" height="315" src="{{page.video3}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br/>
+
 
 <h2>Code and Dataset</h2>
 
