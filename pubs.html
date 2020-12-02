@@ -12,16 +12,16 @@ title: Publications
         {% if pub.type %}
         &lsqb;{{ pub.type }}&rsqb;	
         {% endif %}
-        {{ pub.name }}<br>
+      {{ pub.name }}<br>
       {{ pub.authors }}<br>
-      {{ pub.published_at}},&nbsp; {{ pub.date | date: "%Y"}}.
-      {% if pub.pdf or pub.video or pub.link or pub.website  %}
-      <br>
+      {% if pub.published_at != "In Review" %}
+        {{ pub.published_at}},&nbsp;  {{ pub.date | date: "%Y"}}. <br>
+      {% endif %}
       {% if pub.pdf %} <a href={{pub.pdf}}>Paper</a> {% endif %} 
       {% if pub.video %} <a href={{pub.video}}>Video</a> {% endif %} 
       {% if pub.link %} <a href={{pub.link}}>Link</a> {% endif %} 
       {% if pub.website %} <a href={{pub.website}}>Website</a> {% endif %}       
-      {% endif %}  
+
     </li>
   {% endfor %}
 </ul>
