@@ -193,14 +193,14 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 </div>
 <br/>
 
-<h2 class="center-this">Tool Manipulation Videos</h2>
+<h2 class="center-this">Tool Manipulation and Planning Video</h2>
 <br/>
 <div class="center-this">
 	<iframe width="560" height="315" src="{{ page.tool_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 <br/>
 
-<h2 class="center-this">6D Effect Prediction Videos</h2>
+<h2 class="center-this">6D Effect Prediction Video</h2>
 <br/>
 <div class="center-this">
 <iframe width="560" height="315" src="{{ page.effect_6d_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
