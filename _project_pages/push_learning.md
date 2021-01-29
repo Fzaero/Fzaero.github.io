@@ -55,6 +55,7 @@ mass_videos_3:
  - https://drive.google.com/file/d/1zlQBtDvGKFRvJnnS2ojioMa-nnlrmQDb/preview
 tool_video: https://drive.google.com/file/d/1GWgfw7pnKNRL7wprr9yXiRYw1tRTMlN4/preview
 effect_6d_video: https://drive.google.com/file/d/1kl6I9dMx7jryAcLozkb9zgxagr_Q-Ttv/preview
+supplementary_video: https://www.youtube.com/embed/k7UfzV1JNYo
 ---
 
 <div id="primarycontent">
@@ -84,15 +85,21 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 
 <br/>
 
-<h2>Paper</h2>
+<h2 class="center-this">Paper</h2>
+<br/>
 <p> PLACEHOLDER PDF LINK</p>
 <p>A. E. Tekden, A. Erdem, E. Erdem, T. Asfour and E. Ugur <br/>
 <a href="{{page.pdf}}"><em>Object and Relation Centric Representations for Push Effect Prediction</em></a></p>
-<h2>Supplementary Video</h2>
-
+<br/>
+<h2 class="center-this">Supplementary Video</h2>
+<br/>
+<div class="center-this">
+	<iframe width="560" height="315" src="{{ page.supplementary_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
 <br/>
 
-<h2>Code and Dataset</h2>
+<h2 class="center-this">Code and Dataset</h2>
+<br/>
 
 <p>Code and dataset will be available soon.</p>
 
