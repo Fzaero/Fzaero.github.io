@@ -14,9 +14,7 @@ title: Publications
         {% endif %}
       {{ pub.name }}<br>
       {{ pub.authors }}<br>
-      {% if pub.published_at != "In Review" %}
-        {{ pub.published_at}},&nbsp;  {{ pub.date | date: "%Y"}}. <br>
-      {% endif %}
+      {{ pub.published_at}},{% if pub.published_at != "Under Review" %}&nbsp;  {{ pub.date | date: "%Y"}} {% endif %}<br>
       {% if pub.pdf %} <a href={{pub.pdf}}>Paper</a> {% endif %} 
       {% if pub.video %} <a href={{pub.video}}>Video</a> {% endif %} 
       {% if pub.link %} <a href={{pub.link}}>Link</a> {% endif %} 

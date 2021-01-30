@@ -2,7 +2,7 @@
 title: Object and Relation Centric Representations for Push Effect Prediction
 layout: project_page_no_sc
 permalink: /push_learning/
-pdf: /assets/papers/BRDPN.pdf
+pdf: /assets/papers/push_learning.pdf
 header_img: /assets/images/Push_learning.jpg
 phys_videos:  
  - https://drive.google.com/file/d/1Xlt8h9YP_Dxe1aZVnOE3KY5-KExzYWAp/preview
@@ -87,7 +87,6 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 
 <h2 class="center-this">Paper</h2>
 <br/>
-<p> PLACEHOLDER PDF LINK</p>
 <p>A. E. Tekden, A. Erdem, E. Erdem, T. Asfour and E. Ugur <br/>
 <a href="{{page.pdf}}"><em>Object and Relation Centric Representations for Push Effect Prediction</em></a></p>
 <br/>
