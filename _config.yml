@@ -31,6 +31,8 @@ plugins:
 
 collections:
   publications:
+  news:
+  videos:
   project_pages:
     output: true
     permalink: /:title/

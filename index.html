@@ -22,11 +22,19 @@ title: Home
     In particular, I am interested in pursuing the research question of how an agent should interact with its 
     environment so that it can learn underlying structured models of the environment that can be used in various manipulation tasks.
 </p>
-
+<h3>News</h3>
+<ul>
+    {% assign ordered_news = site.news | sort:"date" | reverse %}
+    {% for new in ordered_news %}
+      <li>
+        {{ new.post }}
+      </li>
+    {% endfor %}
+  </ul>
+<h3>Videos</h3>
+{% assign video_list = site.videos %}   
 <p>
-<iframe width="400" height="250" src="https://www.youtube.com/embed/1U3PmZ0m_0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="400" height="250" src="https://www.youtube.com/embed/uWPr7IFT_9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="400" height="250" src="https://www.youtube.com/embed/dFPOH1C3DeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="400" height="250" src="https://www.youtube.com/embed/_CSnuJ1w_1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="400" height="250" src="https://www.youtube.com/embed/AMI6clgiK5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% for video in video_list %}
+<iframe width="400" height="250" src={{ video.video }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endfor %}
 </p>
