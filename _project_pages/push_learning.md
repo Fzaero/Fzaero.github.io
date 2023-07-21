@@ -66,6 +66,7 @@ real_world_phys:
  - https://drive.google.com/file/d/1C-94BCvmqsIOJJJvL3BSDek1QPvDqOKE/preview
  - https://drive.google.com/file/d/1JybiXG75ZPxVs1OtiWwoYsjJOQ75XLX8/preview
  - https://drive.google.com/file/d/1Mk-TLwJXWBejKnsk9IgwMARUMJHuZFK7/preview
+ - https://drive.google.com/file/d/1288D3opfssHa7vsbsAPvujAO-YHkjp9l/preview
  - https://drive.google.com/file/d/1SIWc-fKdIN5jksrmrXaKdB3rv65-F1nT/preview
  - https://drive.google.com/file/d/1TovZMcbKw5oadwAK5KRmzcHCjIqjM4v_/preview
  - https://drive.google.com/file/d/1W1LqsuspdXc-a4cp5DTv05Y7Y4EsCXnZ/preview
