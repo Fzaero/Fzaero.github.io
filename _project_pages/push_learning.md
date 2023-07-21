@@ -73,7 +73,6 @@ real_world_phys:
  - https://drive.google.com/file/d/1fpslMCbQP5tsHhgmaHAtB9lQ-1rJViJX/preview
  - https://drive.google.com/file/d/1ueEH2rIBpSjuojSlLBVt8Jy-wDXSNiVG/preview
 real_world_belief:  
- - https://drive.google.com/file/d/1Xlt8h9YP_Dxe1aZVnOE3KY5-KExzYWAp/preview
  - https://drive.google.com/file/d/1-m8PmhxUccCgeW2tmKGPYq7w0SDUCt_Z/preview
  - https://drive.google.com/file/d/18MiP9ZfKmPq1vjZd3w8-RIKK1vs7FXJg/preview
  - https://drive.google.com/file/d/18yPVJ5LbRQC_hHDEldlffUvxIoOzL9dQ/preview
