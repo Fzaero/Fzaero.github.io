@@ -163,22 +163,22 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 
 <h2 class="center-this">Physics Prediction Videos (CNN Baseline)</h2>
 <br/>
-{% assign phys_video_cnt = 0 %}
-<div id="carouselExampleControls" class="carousel slide" data-interval="false">
+{% assign phys_video_cnn_cnt = 0 %}
+<div id="carouselExampleControls_cnn" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
-  {% for video in page.phys_videos_CNN %}{% if phys_video_cnt == 0 %}
+  {% for video in page.phys_videos_CNN %}{% if phys_video_cnn_cnt == 0 %}
 		<div class="carousel-item active">
 			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
         	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-    	</div> {% endif %}{% assign phys_video_cnt = 1 %}{% endfor %}
+    	</div> {% endif %}{% assign phys_video_cnn_cnt = 1 %}{% endfor %}
     </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleControls_cnn" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleControls_cnn" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -260,44 +260,44 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 <h2 class="center-this">Real World Videos</h2>
 <h3 class="center-this">Physics Prediction</h3>
 <br/>
-{% assign phys_video_cnt = 0 %}
-<div id="carouselExampleControls" class="carousel slide" data-interval="false">
+{% assign phys_video_real_cnt = 0 %}
+<div id="carouselExampleControls_real_phys" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
-  {% for video in page.real_world_phys %}{% if phys_video_cnt == 0 %}
+  {% for video in page.real_world_phys %}{% if phys_video_real_cnt == 0 %}
 		<div class="carousel-item active">
 			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
         	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-    	</div> {% endif %}{% assign phys_video_cnt = 1 %}{% endfor %}
+    	</div> {% endif %}{% assign phys_video_real_cnt = 1 %}{% endfor %}
     </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleControls_real_phys" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleControls_real_phys" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
 <h3 class="center-this">Joint Prediction</h3>
 <br/>
-{% assign belief_video_cnt = 0 %}
-<div id="carouselExampleControls2" class="carousel slide" data-interval="false">
+{% assign belief_video_real_cnt = 0 %}
+<div id="carouselExampleControls_real_belief" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
-  {% for video in page.real_world_belief %}{% if belief_video_cnt == 0 %}
+  {% for video in page.real_world_belief %}{% if belief_video_real_cnt == 0 %}
 		<div class="carousel-item active">
 			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
         	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-    	</div> {% endif %}{% assign belief_video_cnt = 1 %}{% endfor %}
+    	</div> {% endif %}{% assign belief_video_real_cnt = 1 %}{% endfor %}
     </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleControls_real_belief" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleControls_real_belief" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="false"></span>
     <span class="sr-only">Next</span>
   </a>
