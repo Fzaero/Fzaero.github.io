@@ -16,6 +16,15 @@ phys_videos:
  - https://drive.google.com/file/d/1DbdM_hM-ZbZ_FU5I3mPOE8F6EV1lcJ5F/preview
  - https://drive.google.com/file/d/1nkZjRW2o7KrGWmh-fWsloUctaRYNEG0F/preview
  - https://drive.google.com/file/d/1-NpFD67XjbfUB4P79DKch-Qd7c_ddn9o/preview
+phys_videos_CNN:  
+ - https://drive.google.com/file/d/12cPTte_skIMbkBoa_SJ6cyx0lEbhjUxS/preview
+ - https://drive.google.com/file/d/14eMmOI95CyfwMgBjeiG7GZgEauAywI8f/preview
+ - https://drive.google.com/file/d/1C3HoCBxe4_YANolt8CynzkZMchpUVOeA/preview
+ - https://drive.google.com/file/d/1J-w2pdptcgm5VBbIv1kVn8AV_6TIinOp/preview
+ - https://drive.google.com/file/d/1LYSUokZiyiAQg0Od2G_Q1OjWeJTPTE5c/preview
+ - https://drive.google.com/file/d/1YIiiOtfx-abzT7ext4SEx-22kUEdGINn/preview
+ - https://drive.google.com/file/d/1iO2dWa4h7QqewqmBBzHNuwtXDvA2Necm/preview
+ - https://drive.google.com/file/d/1qbzUDypwfE3wZtFuVa8hv6K505cu59f_/preview
 belief_videos:
  - https://drive.google.com/file/d/13KbNWqRdfdNWG782RzjEzbrpR4d6IrlU/preview
  - https://drive.google.com/file/d/16Cqw7oeEC4-ccOc3tm377tfe3sip0AeW/preview
@@ -106,12 +115,36 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 <a href="https://github.com/Fzaero/Object-and-Relation-Centric-Representations-for-Push-Effect-Prediction"><em>https://github.com/Fzaero/Object-and-Relation-Centric-Representations-for-Push-Effect-Prediction</em></a></p>
 
 <br/>
-<h2 class="center-this">Physics Prediction Videos</h2>
+<h2 class="center-this">Physics Prediction Videos (Ours)</h2>
 <br/>
 {% assign phys_video_cnt = 0 %}
 <div id="carouselExampleControls" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
   {% for video in page.phys_videos %}{% if phys_video_cnt == 0 %}
+		<div class="carousel-item active">
+			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+		</div>{% else %}
+		<div class="carousel-item">
+        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    	</div> {% endif %}{% assign phys_video_cnt = 1 %}{% endfor %}
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br/>
+
+<h2 class="center-this">Physics Prediction Videos (CNN Baseline)</h2>
+<br/>
+{% assign phys_video_cnt = 0 %}
+<div id="carouselExampleControls" class="carousel slide" data-interval="false">
+  <div class="carousel-inner">
+  {% for video in page.phys_videos_CNN %}{% if phys_video_cnt == 0 %}
 		<div class="carousel-item active">
 			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
