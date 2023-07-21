@@ -62,6 +62,28 @@ mass_videos_3:
  - https://drive.google.com/file/d/1qe0mrH_hohtHqA9l1KlzHUlVwUCfpIC2/preview
  - https://drive.google.com/file/d/1ujGzDr7-4sbYuK3PVzSUREPTlda0pjrO/preview
  - https://drive.google.com/file/d/1zlQBtDvGKFRvJnnS2ojioMa-nnlrmQDb/preview
+real_world_phys:  
+ - https://drive.google.com/file/d/1C-94BCvmqsIOJJJvL3BSDek1QPvDqOKE/preview
+ - https://drive.google.com/file/d/1JybiXG75ZPxVs1OtiWwoYsjJOQ75XLX8/preview
+ - https://drive.google.com/file/d/1Mk-TLwJXWBejKnsk9IgwMARUMJHuZFK7/preview
+ - https://drive.google.com/file/d/1SIWc-fKdIN5jksrmrXaKdB3rv65-F1nT/preview
+ - https://drive.google.com/file/d/1TovZMcbKw5oadwAK5KRmzcHCjIqjM4v_/preview
+ - https://drive.google.com/file/d/1W1LqsuspdXc-a4cp5DTv05Y7Y4EsCXnZ/preview
+ - https://drive.google.com/file/d/1WjRmEQDlmz0mQ9nJ6GuKmJToZNK1Mopu/preview
+ - https://drive.google.com/file/d/1fpslMCbQP5tsHhgmaHAtB9lQ-1rJViJX/preview
+ - https://drive.google.com/file/d/1ueEH2rIBpSjuojSlLBVt8Jy-wDXSNiVG/preview
+real_world_belief:  
+ - https://drive.google.com/file/d/1Xlt8h9YP_Dxe1aZVnOE3KY5-KExzYWAp/preview
+ - https://drive.google.com/file/d/1-m8PmhxUccCgeW2tmKGPYq7w0SDUCt_Z/preview
+ - https://drive.google.com/file/d/18MiP9ZfKmPq1vjZd3w8-RIKK1vs7FXJg/preview
+ - https://drive.google.com/file/d/18yPVJ5LbRQC_hHDEldlffUvxIoOzL9dQ/preview
+ - https://drive.google.com/file/d/1VFsLKhCxhU1yuyZvj6yM4gaPMrZgzvW5/preview
+ - https://drive.google.com/file/d/1aQn9nTQ-O28THo_gZnoJEMM_gCqxW67X/preview
+ - https://drive.google.com/file/d/1hC6mumiGYAlGPnLUkFC4xykGPz8F1TqT/preview
+ - https://drive.google.com/file/d/1hIkNwIYhYAYCSkDntp0ONURjJb4iJGqv/preview
+ - https://drive.google.com/file/d/1ivmoS93htJ-j10OxUXB_1PZ-4E-i5FZa/preview
+ - https://drive.google.com/file/d/1p6guJUrQGLyavrp90L_PVQGuOrVAATJz/preview
+ - https://drive.google.com/file/d/1rxnLFPcdFcA63DJhRMwLHlre9DsAJOdg/preview
 tool_video: https://drive.google.com/file/d/1GWgfw7pnKNRL7wprr9yXiRYw1tRTMlN4/preview
 mpc_cuboid_video: https://drive.google.com/file/d/1aStY113lHjK2xdNSjQenga6XRBeCuNvX/preview
 mpc_cylinder_video: https://drive.google.com/file/d/1TFcnyj1OiEVQnJKB5QIMQkwru6nCEbn-/preview
@@ -234,6 +256,52 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   </a>
 </div>
 <br/>
+
+<h2 class="center-this">Real World Videos</h2>
+<h3 class="center-this">Physics Prediction</h3>
+<br/>
+{% assign phys_video_cnt = 0 %}
+<div id="carouselExampleControls" class="carousel slide" data-interval="false">
+  <div class="carousel-inner">
+  {% for video in page.real_world_phys %}{% if phys_video_cnt == 0 %}
+		<div class="carousel-item active">
+			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+		</div>{% else %}
+		<div class="carousel-item">
+        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    	</div> {% endif %}{% assign phys_video_cnt = 1 %}{% endfor %}
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<h3 class="center-this">Joint Prediction</h3>
+<br/>
+{% assign belief_video_cnt = 0 %}
+<div id="carouselExampleControls2" class="carousel slide" data-interval="false">
+  <div class="carousel-inner">
+  {% for video in page.real_world_belief %}{% if belief_video_cnt == 0 %}
+		<div class="carousel-item active">
+			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+		</div>{% else %}
+		<div class="carousel-item">
+        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    	</div> {% endif %}{% assign belief_video_cnt = 1 %}{% endfor %}
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <h2 class="center-this">Tool Manipulation and Planning Video</h2>
 <br/>
