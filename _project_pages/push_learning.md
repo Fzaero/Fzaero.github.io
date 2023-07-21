@@ -54,6 +54,8 @@ mass_videos_3:
  - https://drive.google.com/file/d/1ujGzDr7-4sbYuK3PVzSUREPTlda0pjrO/preview
  - https://drive.google.com/file/d/1zlQBtDvGKFRvJnnS2ojioMa-nnlrmQDb/preview
 tool_video: https://drive.google.com/file/d/1GWgfw7pnKNRL7wprr9yXiRYw1tRTMlN4/preview
+mpc_cuboid_video: https://drive.google.com/file/d/1TFcnyj1OiEVQnJKB5QIMQkwru6nCEbn-/preview
+mpc_cylinder_video: https://drive.google.com/file/d/1GWgfw7pnKNRL7wprr9yXiRYw1tRTMlN4/preview
 effect_6d_video: https://drive.google.com/file/d/1kl6I9dMx7jryAcLozkb9zgxagr_Q-Ttv/preview
 supplementary_video: https://www.youtube.com/embed/k7UfzV1JNYo
 ---
@@ -206,6 +208,22 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 	<iframe width="560" height="315" src="{{ page.tool_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 <br/>
+
+<h2 class="center-this">MPC Videos</h2>
+<h3 class="center-this">Cuboid</h3>
+<br/>
+<div class="center-this">
+	<iframe width="560" height="315" src="{{ page.mpc_cuboid_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+<br/>
+
+<h3 class="center-this">Cylinder</h3>
+<br/>
+<div class="center-this">
+	<iframe width="560" height="315" src="{{ page.mpc_cylinder_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+<br/>
+
 
 <h2 class="center-this">6D Effect Prediction Video</h2>
 <br/>
