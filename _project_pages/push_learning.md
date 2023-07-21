@@ -54,8 +54,8 @@ mass_videos_3:
  - https://drive.google.com/file/d/1ujGzDr7-4sbYuK3PVzSUREPTlda0pjrO/preview
  - https://drive.google.com/file/d/1zlQBtDvGKFRvJnnS2ojioMa-nnlrmQDb/preview
 tool_video: https://drive.google.com/file/d/1GWgfw7pnKNRL7wprr9yXiRYw1tRTMlN4/preview
-mpc_cuboid_video: https://drive.google.com/file/d/1TFcnyj1OiEVQnJKB5QIMQkwru6nCEbn-/preview
-mpc_cylinder_video: https://drive.google.com/file/d/1GWgfw7pnKNRL7wprr9yXiRYw1tRTMlN4/preview
+mpc_cuboid_video: https://drive.google.com/file/d/1aStY113lHjK2xdNSjQenga6XRBeCuNvX/preview
+mpc_cylinder_video: https://drive.google.com/file/d/1TFcnyj1OiEVQnJKB5QIMQkwru6nCEbn-/preview
 effect_6d_video: https://drive.google.com/file/d/1kl6I9dMx7jryAcLozkb9zgxagr_Q-Ttv/preview
 supplementary_video: https://www.youtube.com/embed/k7UfzV1JNYo
 ---
