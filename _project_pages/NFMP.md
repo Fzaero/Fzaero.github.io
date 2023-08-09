@@ -48,7 +48,9 @@ can generate 6D motions.
 
 <h2>Interpolations between demonstrations</h2>
 
-<p>Bilinear interpolation between embeddings of four demonstrations. Scene images for these demonstration are given on the each corresponding corner. Move the marker to see the scenes and motions generated for different embeddings.</p>
+<p>Bilinear interpolation between embeddings of four demonstrations. Scene images for these demonstration are given on the each corresponding corner. </p>
+
+<p> <b>Move the marker to see the scenes and motions generated for different embeddings.</b></p>
 <div id="widget">
   <div class="demo_area row" style="margin: 1px ">
     <div class="col-4">
@@ -58,7 +60,7 @@ can generate 6D motions.
     <div id ="interp_plane" class="col-4" style="top: 10px ">
       <div id="markerbounds">
         <div id="box">
-          <div id="marker"></div>
+          <div id="marker" style="border: 3px solid black;"></div>
         </div>  
       </div>
       <br/>
