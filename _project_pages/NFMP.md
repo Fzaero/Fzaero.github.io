@@ -1,6 +1,6 @@
 ---
 title: Neural Field Movement Primitives for <br> Joint Modelling of Scenes and Motions
-layout: project_page
+layout: project_page_nfmp
 permalink: /NFMP/
 header_img: /assets/images/NFMP.png
 pdf: #
@@ -19,7 +19,7 @@ video: https://www.youtube.com/embed/ekaIVBpe2Gw
 </center>
 <br>
 
-<img width="800" style="margin: 0px " id="header_img" src="{{page.header_img}}"/><br>
+<img width="1000" style="margin: 0px " id="header_img" src="{{page.header_img}}"/><br>
 <br>
 <h2>Abstract</h2>
 <p>
@@ -46,6 +46,34 @@ can generate 6D motions.
 
 <br/>
 
+<h2>Interpolations between demonstrations</h2>
+
+<p>Bilinear interpolation between embeddings of four demonstrations. Scene images for these demonstration are given on the each corresponding corner. Move the marker to see the scenes and motions generated for different embeddings.</p>
+<div id="widget">
+  <div class="demo_area row" style="margin: 1px ">
+    <div class="col-4">
+      <div class="row"><img id="demo_0" class="col" src="/assets/images/nfmp/demo_6.png"> </div>
+      <div class="row"><img id="demo_0" class="col" src="/assets/images/nfmp/demo_0.png"> </div>
+    </div>
+    <div id ="interp_plane" class="col-4" style="top: 10px ">
+      <div id="markerbounds">
+        <div id="box">
+          <div id="marker"></div>
+        </div>  
+      </div>
+      <br/>
+    </div>
+    <div class="col-4">
+      <div class="row"><img id="demo_0" class="col" src="/assets/images/nfmp/demo_8.png"> </div>
+      <div class="row"><img id="demo_0" class="col" src="/assets/images/nfmp/demo_2.png"> </div>
+    </div>
+  </div>
+
+  <div id="images" class="row">
+    <img id="interp_rgb" class="col-6" src="/assets/images/nfmp/rgb_0.png">
+    <img id="interp_mp" class="col-6" src="/assets/images/nfmp/mp_0.png">  
+  </div>
+</div>
 <h2>Supplementary Video</h2>
 
 <div class="video">
@@ -58,3 +86,84 @@ can generate 6D motions.
 <p>Code is coming soon.</p>
 
 <br/>
+
+<script type="text/javascript">
+    var slider = {
+      get_position: function() {
+        var marker_pos = $('#marker').position();
+        var left_pos = marker_pos.left + slider.marker_size / 2;
+        var top_pos = marker_pos.top + slider.marker_size / 2;
+        
+        slider.position = {
+          left: left_pos,
+          top: top_pos,
+          x: Math.round(slider.round_factor.x * (left_pos * slider.xmax / slider.width)) / slider.round_factor.x,
+          y: Math.round((slider.round_factor.y * (slider.height - top_pos) * slider.ymax / slider.height)) / slider.round_factor.y,
+        };
+
+      },
+      
+      update_img: function(){
+        index = slider.position.x * 6 + slider.position.y 
+        document.getElementById("interp_rgb").src="/assets/images/nfmp/rgb_"+index.toString()+".png";
+        document.getElementById("interp_mp").src="/assets/images/nfmp/mp_"+index.toString()+".png";
+      },
+      
+      draw: function(x_size, y_size, xmax, ymax, marker_size, round_to) {
+        
+        if ((x_size === undefined) && (y_size === undefined) && (xmax === undefined) && (ymax === undefined) && (marker_size === undefined) && (round_to === undefined)) {
+          x_size = 150;
+          y_size = 150;
+          xmax = 1;
+          ymax = 1;
+          marker_size = 20;
+          round_to = 2;
+        };
+        
+        slider.marker_size = marker_size;
+        slider.height = y_size;
+        slider.width = x_size;
+        slider.xmax = xmax;
+        slider.ymax = ymax;
+        round_to = Math.pow(10, round_to);
+        slider.round_factor = {
+          x: round_to,
+          y: round_to,
+        };
+        
+        $("#markerbounds").css({
+          "width": (x_size + marker_size).toString() + 'px',
+          "height": (y_size + marker_size).toString() + 'px',
+        });
+        $("#box").css({
+          "width": x_size.toString() + 'px',
+          "height": y_size.toString() + 'px',
+          "top": 10,
+          "left": 10,
+        });
+        $("#marker").css({
+          "width": marker_size.toString() + 'px',
+          "height": marker_size.toString() + 'px',
+        });
+                
+        $("#interp_plane").css({
+          "width": (x_size + marker_size).toString() + 'px',
+        });
+        
+        slider.get_position();
+        
+      },
+      
+    };
+  $( document ).ready(function() {
+    slider.draw(300,300,5,5,20,0);
+    slider.update_img()
+  });
+  $("#marker").draggable({ 
+      containment: "#markerbounds",
+      drag: function() {
+        slider.get_position();
+        slider.update_img()
+      },
+  });  
+</script>
