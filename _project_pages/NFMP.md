@@ -3,7 +3,7 @@ title: Neural Field Movement Primitives for <br> Joint Modelling of Scenes and M
 layout: project_page_nfmp
 permalink: /NFMP/
 header_img: /assets/images/NFMP.png
-pdf: #
+pdf: /assets/papers/IROS_2023_Tekden.pdf
 video: https://www.youtube.com/embed/ekaIVBpe2Gw
 ---
 
