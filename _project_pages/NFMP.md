@@ -60,7 +60,7 @@ can generate 6D motions.
     <div id ="interp_plane" class="col-4" style="top: 10px ">
       <div id="markerbounds">
         <div id="box">
-          <div id="marker" style="border: 3px solid black;"></div>
+          <div id="marker" class="is-hoverable" style="border: 3px solid black;"></div>
         </div>  
       </div>
       <br/>
@@ -140,8 +140,8 @@ can generate 6D motions.
         $("#box").css({
           "width": x_size.toString() + 'px',
           "height": y_size.toString() + 'px',
-          "top": 10,
-          "left": 10,
+          "top": 15,
+          "left": 15,
         });
         $("#marker").css({
           "width": marker_size.toString() + 'px',
@@ -158,7 +158,7 @@ can generate 6D motions.
       
     };
   $( document ).ready(function() {
-    slider.draw(300,300,5,5,20,0);
+    slider.draw(300,300,5,5,40,0);
     slider.update_img()
   });
   $("#marker").draggable({ 
