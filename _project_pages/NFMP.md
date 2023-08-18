@@ -3,7 +3,7 @@ title: Neural Field Movement Primitives for <br> Joint Modelling of Scenes and M
 layout: project_page_nfmp
 permalink: /NFMP/
 header_img: /assets/images/NFMP.png
-pdf: /assets/papers/IROS_2023_Tekden.pdf
+pdf: https://arxiv.org/abs/2308.05040
 video: https://www.youtube.com/embed/ekaIVBpe2Gw
 ---
 
@@ -39,12 +39,13 @@ to novel scenes. Furthermore, in real-world experiments, we show that our method
 multi-valued trajectories, it is robust to the distractor objects introduced at inference time, and it 
 can generate 6D motions.
 </p>
+<hr>
 
 <h2>Paper</h2>
 <p>Ahmet E Tekden, Marc P. Deisenroth, Yasemin Bekiroglu<br/>
 <a href="{{page.pdf}}"><em>Neural Field Movement Primitives for Joint Modelling of Scenes and Motions</em></a></p>
 
-<br/>
+<hr>
 
 <h2>Interpolations between demonstrations</h2>
 
@@ -71,24 +72,30 @@ can generate 6D motions.
     </div>
   </div>
 
+  <div id="image_titles" class="row">
+    <h3 id="rgb_title" style="text-align: center" class="col-6"> Scene Function </h3>
+    <h3 id="motion_title" style="text-align: center" class="col-6"> Motion Function </h3>
+  </div>
+
   <div id="images" class="row">
     <img id="interp_rgb" class="col-6" src="/assets/images/nfmp/rgb_0.png">
     <img id="interp_mp" class="col-6" src="/assets/images/nfmp/mp_0.png">  
   </div>
 </div>
+<br>
+<p> The scene function shows the reconstructed scene image. The motion function illustrates the corresponding minimum implicit cost value for each x and y indexes.</p>
+<hr>
 <h2>Supplementary Video</h2>
 
 <div class="video">
     <iframe width="560" height="315" src="{{page.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<br/>
+<br/><hr>
 
 <h2>Code</h2>
 
 <p>Code is coming soon.</p>
-
 <br/>
-
 <script type="text/javascript">
     var slider = {
       get_position: function() {
