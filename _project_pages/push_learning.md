@@ -17,14 +17,14 @@ phys_videos:
  - https://drive.google.com/file/d/1nkZjRW2o7KrGWmh-fWsloUctaRYNEG0F/preview
  - https://drive.google.com/file/d/1-NpFD67XjbfUB4P79DKch-Qd7c_ddn9o/preview
 phys_videos_CNN:  
- - https://drive.google.com/file/d/12cPTte_skIMbkBoa_SJ6cyx0lEbhjUxS/preview
- - https://drive.google.com/file/d/14eMmOI95CyfwMgBjeiG7GZgEauAywI8f/preview
- - https://drive.google.com/file/d/1C3HoCBxe4_YANolt8CynzkZMchpUVOeA/preview
- - https://drive.google.com/file/d/1J-w2pdptcgm5VBbIv1kVn8AV_6TIinOp/preview
- - https://drive.google.com/file/d/1LYSUokZiyiAQg0Od2G_Q1OjWeJTPTE5c/preview
- - https://drive.google.com/file/d/1YIiiOtfx-abzT7ext4SEx-22kUEdGINn/preview
- - https://drive.google.com/file/d/1iO2dWa4h7QqewqmBBzHNuwtXDvA2Necm/preview
- - https://drive.google.com/file/d/1qbzUDypwfE3wZtFuVa8hv6K505cu59f_/preview
+ - https://drive.google.com/file/d/10dY75ASK84Avea1pTZpjygH92DcnWKwq/preview
+ - https://drive.google.com/file/d/1T1z1bYImdkzLg0lfomkNrBuj0w56Bvld/preview
+ - https://drive.google.com/file/d/1WilMn3JH8iaOJ8aRv85uTukzhirxDGql/preview
+ - https://drive.google.com/file/d/1dkXqTDsUdDNmfuLT5eN_L7QJOTd8wSXb/preview
+ - https://drive.google.com/file/d/1PQgO8O8OJArdknKIonLNEjIY0BUbyGel/preview
+ - https://drive.google.com/file/d/1ZoH8nEitEgBmXHCc8XuwiZKU6izaHpfb/preview
+ - https://drive.google.com/file/d/1alO04Z_vQNThm4oyNZRTFjI1qFFUSL2M/preview
+ - https://drive.google.com/file/d/11E6h-i2Hld_wogg6VPagPgTqE8dmpDOk/preview
 belief_videos:
  - https://drive.google.com/file/d/13KbNWqRdfdNWG782RzjEzbrpR4d6IrlU/preview
  - https://drive.google.com/file/d/16Cqw7oeEC4-ccOc3tm377tfe3sip0AeW/preview
