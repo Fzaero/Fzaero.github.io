@@ -4,6 +4,7 @@ layout: project_page_nfmp
 permalink: /NFMP/
 header_img: /assets/images/NFMP.png
 pdf: https://arxiv.org/abs/2308.05040
+github: https://github.com/Fzaero/Neural-Field-Movement-Primitives
 video: https://www.youtube.com/embed/ekaIVBpe2Gw
 ---
 
@@ -94,7 +95,7 @@ can generate 6D motions.
 
 <h2>Code</h2>
 
-<p>Code is coming soon.</p>
+<a href="{{page.github}}"><em>{{page.github}}</em></a></p>
 <br/>
 <script type="text/javascript">
     var slider = {
