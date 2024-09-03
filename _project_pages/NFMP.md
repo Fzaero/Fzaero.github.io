@@ -48,6 +48,11 @@ can generate 6D motions.
 
 <hr>
 
+<h2>Code</h2>
+
+<a href="{{page.github}}"><em>{{page.github}}</em></a></p>
+<hr>
+
 <h2>Interpolations between demonstrations</h2>
 
 <p>Bilinear interpolation between embeddings of four demonstrations. Scene images for these demonstration are given on the each corresponding corner. </p>
@@ -93,10 +98,6 @@ can generate 6D motions.
 </div>
 <br/><hr>
 
-<h2>Code</h2>
-
-<a href="{{page.github}}"><em>{{page.github}}</em></a></p>
-<br/>
 <script type="text/javascript">
     var slider = {
       get_position: function() {
