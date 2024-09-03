@@ -50,7 +50,7 @@ can generate 6D motions.
 
 <h2>Code</h2>
 
-<a href="{{page.github}}"><em>{{page.github}}</em></a></p>
+<p><a href="{{page.github}}"><em>{{page.github}}</em></a></p>
 <hr>
 
 <h2>Interpolations between demonstrations</h2>
