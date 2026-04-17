@@ -14,7 +14,7 @@ video: https://www.youtube.com/embed/ekaIVBpe2Gw
 <br> 
 	<a href="/">Ahmet E Tekden<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://www.deisenroth.cc/">Marc P. Deisenroth<sup>2</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://yaseminb.github.io/">Yasemin Bekiroglu<sup>1,2</sup></a><br><br>
+	<a href="https://www.dryaseminbekiroglu.com/">Yasemin Bekiroglu<sup>1,2</sup></a><br><br>
 	<sup>1</sup>Chalmers University of Technology
 	<sup>2</sup>University College London
 </center>
