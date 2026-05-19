@@ -2,6 +2,8 @@
 title: Reactive Motion Generation via <br> Phase-varying Neural Potential Functions
 layout: project_page
 permalink: /PNPF/
+github: https://github.com/Fzaero/PNPF
+pdf: https://ieeexplore.ieee.org/document/11513752/
 video: https://www.youtube.com/embed/9d-7r-kdCsE
 
 all_videos_LASA:
@@ -159,8 +161,14 @@ Dynamical systems (DS) methods for Learning-from-Demonstration (LfD) provide sta
 </p>
 <hr>
 
+<h2>Paper</h2>
+<a href="{{page.pdf}}"><em>Reactive Motion Generation via Phase-varying Neural Potential Functions</em></a>
+
+<hr>
+
 <h2>Code</h2>
-Coming Soon
+
+<p><a href="{{page.github}}"><em>{{page.github}}</em></a></p>
 <hr>
 
 <h2>Supplementary Video</h2>
