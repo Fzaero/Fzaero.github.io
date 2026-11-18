@@ -2,7 +2,6 @@
 title: Object and Relation Centric Representations for Push Effect Prediction
 layout: project_page_no_sc
 permalink: /push_learning/
-pdf: /assets/papers/push_learning.pdf
 header_img: /assets/images/Push_learning.jpg
 phys_videos:  
  - https://drive.google.com/file/d/1Xlt8h9YP_Dxe1aZVnOE3KY5-KExzYWAp/preview
@@ -94,7 +93,7 @@ supplementary_video: https://www.youtube.com/embed/k7UfzV1JNYo
 <div id="primarycontent">
 <center>
 <br> 
-<h2>Object and Relation Centric Representations for Push Effect Prediction</h2>   
+<h1 class="project-title">Object and Relation Centric Representations for Push Effect Prediction</h1>
 <br> 
 	<a href="/">A. E. Tekden<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://aykuterdem.github.io/">A. Erdem<sup>2</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,9 +106,10 @@ supplementary_video: https://www.youtube.com/embed/k7UfzV1JNYo
 	<a href="http://h2t.anthropomatik.kit.edu/"><b><sup>4</sup>(H²T)</b></a> <br>
 
 </center>
+{% include project-links.html %}
 <br>
 
-<img height="500px" style="margin: 0px -30px" id="header_img" src="{{page.header_img}}"/><br>
+<img id="header_img" src="{{page.header_img}}"/><br>
 <br>
 <h2>Abstract</h2>
 <p style="text-align: justify">
@@ -118,11 +118,6 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 
 <br/>
 
-<h2 class="center-this">Paper</h2>
-<br/>
-<p>A. E. Tekden, A. Erdem, E. Erdem, T. Asfour and E. Ugur <br/>
-<a href="{{page.pdf}}"><em>Object and Relation Centric Representations for Push Effect Prediction</em></a></p>
-<br/>
 <h2 class="center-this">Supplementary Video</h2>
 <br/>
 <div class="center-this">
@@ -130,13 +125,8 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 </div>
 <br/>
 
-<h2 class="center-this">Code and Dataset</h2>
-<br/>
-
-<p>Code and dataset is available at:<br/>
-<a href="https://github.com/Fzaero/Object-and-Relation-Centric-Representations-for-Push-Effect-Prediction"><em>https://github.com/Fzaero/Object-and-Relation-Centric-Representations-for-Push-Effect-Prediction</em></a></p>
-
-<br/>
+<div class="demo-grid">
+<section class="demo-card">
 <h2 class="center-this">Physics Prediction Videos (Ours)</h2>
 <br/>
 {% assign phys_video_cnt = 0 %}
@@ -144,10 +134,10 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   <div class="carousel-inner">
   {% for video in page.phys_videos %}{% if phys_video_cnt == 0 %}
 		<div class="carousel-item active">
-			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
-        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     	</div> {% endif %}{% assign phys_video_cnt = 1 %}{% endfor %}
     </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -160,7 +150,8 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   </a>
 </div>
 <br/>
-
+</section>
+<section class="demo-card">
 <h2 class="center-this">Physics Prediction Videos (CNN Baseline)</h2>
 <br/>
 {% assign phys_video_cnn_cnt = 0 %}
@@ -168,10 +159,10 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   <div class="carousel-inner">
   {% for video in page.phys_videos_CNN %}{% if phys_video_cnn_cnt == 0 %}
 		<div class="carousel-item active">
-			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
-        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     	</div> {% endif %}{% assign phys_video_cnn_cnt = 1 %}{% endfor %}
     </div>
   <a class="carousel-control-prev" href="#carouselExampleControls_cnn" role="button" data-slide="prev">
@@ -184,7 +175,8 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   </a>
 </div>
 <br/>
-
+</section>
+<section class="demo-card">
 <h2 class="center-this">Joint Prediction Videos</h2>
 <br/>
 {% assign belief_video_cnt = 0 %}
@@ -192,10 +184,10 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   <div class="carousel-inner">
   {% for video in page.belief_videos %}{% if belief_video_cnt == 0 %}
 		<div class="carousel-item active">
-			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
-        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     	</div> {% endif %}{% assign belief_video_cnt = 1 %}{% endfor %}
     </div>
   <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
@@ -209,6 +201,8 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
 </div>
 
 <br/>
+</section>
+<section class="demo-card">
 <h2 class="center-this">Mass Prediction Videos - 2 Objects</h2>
 <br/>
 {% assign mass_video_2_cnt = 0 %}
@@ -216,10 +210,10 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   <div class="carousel-inner">
   {% for video in page.mass_videos_2 %}{% if mass_video_2_cnt == 0 %}
 		<div class="carousel-item active">
-			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
-        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     	</div> {% endif %}{% assign mass_video_2_cnt = 1 %}{% endfor %}
     </div>
   <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
@@ -232,7 +226,8 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   </a>
 </div>
 <br/>
-
+</section>
+<section class="demo-card">
 <h2 class="center-this">Mass Prediction Videos - 3 Objects</h2>
 <br/>
 {% assign mass_video_3_cnt = 0 %}
@@ -240,10 +235,10 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   <div class="carousel-inner">
   {% for video in page.mass_videos_3 %}{% if mass_video_3_cnt == 0 %}
 		<div class="carousel-item active">
-			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
-        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     	</div> {% endif %}{% assign mass_video_3_cnt = 1 %}{% endfor %}
     </div>
   <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
@@ -256,8 +251,25 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   </a>
 </div>
 <br/>
-
-<h2 class="center-this">Real World Videos</h2>
+</section>
+<section class="demo-card">
+<h2 class="center-this">Tool Manipulation and Planning Video</h2>
+<br/>
+<div class="center-this">
+    <iframe class="additional-video" width="560" height="315" src="{{ page.tool_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+<br/>
+</section>
+<section class="demo-card">
+<h2 class="center-this">6D Effect Prediction Video</h2>
+<br/>
+<div class="center-this">
+<iframe class="additional-video" width="560" height="315" src="{{ page.effect_6d_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+<br/>
+</section>
+<div class="demo-group-heading"><h2 class="center-this">Real World Videos</h2></div>
+<section class="demo-card">
 <h3 class="center-this">Physics Prediction</h3>
 <br/>
 {% assign phys_video_real_cnt = 0 %}
@@ -265,10 +277,10 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   <div class="carousel-inner">
   {% for video in page.real_world_phys %}{% if phys_video_real_cnt == 0 %}
 		<div class="carousel-item active">
-			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
-        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     	</div> {% endif %}{% assign phys_video_real_cnt = 1 %}{% endfor %}
     </div>
   <a class="carousel-control-prev" href="#carouselExampleControls_real_phys" role="button" data-slide="prev">
@@ -280,6 +292,8 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
     <span class="sr-only">Next</span>
   </a>
 </div>
+</section>
+<section class="demo-card">
 <h3 class="center-this">Joint Prediction</h3>
 <br/>
 {% assign belief_video_real_cnt = 0 %}
@@ -287,10 +301,10 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
   <div class="carousel-inner">
   {% for video in page.real_world_belief %}{% if belief_video_real_cnt == 0 %}
 		<div class="carousel-item active">
-			<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 		</div>{% else %}
 		<div class="carousel-item">
-        	<iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe class="additional-video" width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     	</div> {% endif %}{% assign belief_video_real_cnt = 1 %}{% endfor %}
     </div>
   <a class="carousel-control-prev" href="#carouselExampleControls_real_belief" role="button" data-slide="prev">
@@ -302,33 +316,22 @@ Pushing is an essential non-prehensile manipulation skill used for tasks ranging
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<h2 class="center-this">Tool Manipulation and Planning Video</h2>
-<br/>
-<div class="center-this">
-	<iframe width="560" height="315" src="{{ page.tool_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-</div>
-<br/>
-
-<h2 class="center-this">MPC Videos</h2>
+</section>
+<div class="demo-group-heading"><h2 class="center-this">MPC Videos</h2></div>
+<section class="demo-card">
 <h3 class="center-this">Cuboid</h3>
 <br/>
 <div class="center-this">
-	<iframe width="560" height="315" src="{{ page.mpc_cuboid_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    <iframe class="additional-video" width="560" height="315" src="{{ page.mpc_cuboid_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 <br/>
-
+</section>
+<section class="demo-card">
 <h3 class="center-this">Cylinder</h3>
 <br/>
 <div class="center-this">
-	<iframe width="560" height="315" src="{{ page.mpc_cylinder_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    <iframe class="additional-video" width="560" height="315" src="{{ page.mpc_cylinder_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 <br/>
-
-
-<h2 class="center-this">6D Effect Prediction Video</h2>
-<br/>
-<div class="center-this">
-<iframe width="560" height="315" src="{{ page.effect_6d_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</section>
 </div>
-<br/>

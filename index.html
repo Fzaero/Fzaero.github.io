@@ -6,21 +6,33 @@ title: Home
 <h3>About Me</h3>
 
 <p>
-    I am a PhD student at the Department of Electrical Engineering at the Chalmers University of Technology, supervised by <a href="https://yaseminb.github.io/">Yasemin Bekiroğlu</a>.
+    I recently completed my PhD in Electrical Engineering at Chalmers University of Technology, supervised by 
+    <a href="https://yaseminb.github.io/">Yasemin Bekiroğlu</a>.
+    I am currently a Project Assistant at Chalmers 
+    University of Technology.
 </p>
 
 <p>
-    In my MSc, I was a research assistant at the Department of Computer Engineering at Boğaziçi University, supervised by
-    <a href="https://www.cmpe.boun.edu.tr/~emre/">Emre Uğur</a>, and I was one of the first members of 
-    <a href="http://colors.cmpe.boun.edu.tr/">Cognition, Learning, and Robotics (CoLoRs)</a> research group, Istanbul, Turkey.
-    I worked in EU funded Horizon 2020 project, <a href="https://www.imagine-h2020.eu/">Robots Understanding Their Actions by Imagining Their Effects (IMAGINE)</a>. 
-    My research was about enabling robots to understand their environment, and predict the consequences of their action on this environment. 
+    During my PhD, my research focused on data-efficient representation learning for robotic grasping and manipulation.
+    In particular, I developed implicit representations for transferring grasps across objects, neural field 
+    representations for visual learning from demonstration, and dynamical systems for generating reactive motions, 
+    including complex trajectories with intersections.
 </p>
 
 <p>
-    My research interests lie in representation learning and robotic manipulation. 
-    In particular, I am interested in pursuing the research question of how an agent should interact with its 
-    environment so that it can learn underlying structured models of the environment that can be used in various manipulation tasks.
+    Before joining Chalmers, I completed my MSc in Computer Engineering at Boğaziçi University,
+    where I worked as a research assistant under the supervision of <a href="https://www.cmpe.boun.edu.tr/~emre/">Emre Uğur</a>.
+    I was among the first members of the <a href="http://colors.cmpe.boun.edu.tr/">Cognition, Learning, and Robotics (CoLoRs)</a>
+    research group and contributed to the EU Horizon 2020 <a href="https://www.imagine-h2020.eu/">Robots Understanding Their Actions by Imagining Their Effects (IMAGINE)</a>
+    project, investigating how robots can learn to predict the effects of their actions on the environment.
+</p>
+
+<p>
+    My research interests lie in robot learning, learning from demonstration, spatial representations,
+    and reactive manipulation. I am particularly interested in how robots can learn structured
+    representations of their environments, including physical dynamics and task-relevant relationships,
+    to acquire, adapt, and reuse manipulation skills. I am also interested in leveraging pretrained
+    visual and multimodal representations to improve generalization across objects, tasks, and environments.
 </p>
 <h3>News</h3>
 <ul>
@@ -32,9 +44,9 @@ title: Home
     {% endfor %}
   </ul>
 <h3>Videos</h3>
-{% assign video_list = site.videos %}   
-<p>
+{% assign video_list = site.videos | sort: "order" %}
+<div class="home-video-grid">
 {% for video in video_list %}
-<iframe width="400" height="250" src={{ video.video }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="home-video" src="{{ video.video }}" title="{% if video.title %}{{ video.title | escape }}{% else %}Research video {{ forloop.index }}{% endif %}" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {% endfor %}
-</p>
+</div>

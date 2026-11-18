@@ -1,32 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | strip_html | escape }}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/site.css">
     <STYLE type=text/css media=all>
-      #primarycontent {
-          MARGIN-LEFT: auto; ; 
-          WIDTH: expression(document.body.clientWidth > 1000? "1000px": "auto" ); 
-          MARGIN-RIGHT: auto; 
-          TEXT-ALIGN: left; 
-          max-width: 1000px
-          }
       BODY {
           TEXT-ALIGN: center
-      }
-      .video {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        padding-top: 25px;
-        height: 0;
-      }
-      .video iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
       }
 
       #markerbounds {
@@ -59,6 +41,8 @@
       </STYLE>
   </head>
   <body>
+    {% include navigation.html %}
+    <br>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>

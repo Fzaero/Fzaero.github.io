@@ -3,14 +3,12 @@ title: Neural Field Movement Primitives for <br> Joint Modelling of Scenes and M
 layout: project_page_nfmp
 permalink: /NFMP/
 header_img: /assets/images/NFMP.png
-pdf: https://arxiv.org/abs/2308.05040
-github: https://github.com/Fzaero/Neural-Field-Movement-Primitives
 video: https://www.youtube.com/embed/ekaIVBpe2Gw
 ---
 
 <div id="primarycontent">
 <center>
-<h2>{{page.title}}</h2>   
+<h1 class="project-title">{{page.title}}</h1>
 <br> 
 	<a href="/">Ahmet E Tekden<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://www.deisenroth.cc/">Marc P. Deisenroth<sup>2</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -18,9 +16,10 @@ video: https://www.youtube.com/embed/ekaIVBpe2Gw
 	<sup>1</sup>Chalmers University of Technology
 	<sup>2</sup>University College London
 </center>
+{% include project-links.html %}
 <br>
 
-<img width="1000" style="margin: 0px " id="header_img" src="{{page.header_img}}"/><br>
+<img id="header_img" src="{{page.header_img}}"/><br>
 <br>
 <h2>Abstract</h2>
 <p>
@@ -40,17 +39,6 @@ to novel scenes. Furthermore, in real-world experiments, we show that our method
 multi-valued trajectories, it is robust to the distractor objects introduced at inference time, and it 
 can generate 6D motions.
 </p>
-<hr>
-
-<h2>Paper</h2>
-<p>Ahmet E Tekden, Marc P. Deisenroth, Yasemin Bekiroglu<br/>
-<a href="{{page.pdf}}"><em>Neural Field Movement Primitives for Joint Modelling of Scenes and Motions</em></a></p>
-
-<hr>
-
-<h2>Code</h2>
-
-<p><a href="{{page.github}}"><em>{{page.github}}</em></a></p>
 <hr>
 
 <h2>Interpolations between demonstrations</h2>

@@ -3,7 +3,6 @@ title: BRDPN
 layout: project_page
 permalink: /BRDPN/
 header_img: /assets/images/BRDPN.png
-pdf: /assets/papers/BRDPN.pdf
 video: https://www.youtube.com/embed/uWPr7IFT_9k
 video2: https://www.youtube.com/embed/rvbmZlVEwHk
 video3: https://www.youtube.com/embed/1U3PmZ0m_0I
@@ -12,7 +11,7 @@ video3: https://www.youtube.com/embed/1U3PmZ0m_0I
 
 <div id="primarycontent">
 <center>
-<h2>Belief Regulated Dual Propagation Nets for Learning Action  Effects on Articulated Multi-Part Object</h2>   
+<h1 class="project-title">Belief Regulated Dual Propagation Nets for Learning Action  Effects on Articulated Multi-Part Object</h1>
 <br> 
 	<a href="/">A. E. Tekden<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://web.cs.hacettepe.edu.tr/~aykut/">A. Erdem<sup>2</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -23,9 +22,10 @@ video3: https://www.youtube.com/embed/1U3PmZ0m_0I
 	<a href="http://colors.cmpe.boun.edu.tr/"><b><sup>1</sup>Boun CoLoRs</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://vision.cs.hacettepe.edu.tr/"><b><sup>2</sup>HUCVL</b></a> <br>
 </center>
+{% include project-links.html %}
 <br>
 
-<img height="200px" style="margin: 0px -120px" id="header_img" src="{{page.header_img}}"/><br>
+<img id="header_img" src="{{page.header_img}}"/><br>
 <br>
 <h2>Abstract</h2>
 <p>
@@ -56,13 +56,6 @@ perform consistently well even if the relations between the
 objects are not explicitly given but instead predicted from observations.
 </p>
 
-<h2>Paper</h2>
-<p>A. E. Tekden, A. Erdem, E. Erdem, M. Imre, M. Y. Seker and E. Ugur <br/>
-<a href="{{page.pdf}}"><em>Belief Regulated Dual Propagation Nets for Learning Action Effects on Groups of Articulated Objects</em></a></p>
-
-
-<br/>
-
 <h2>Supplementary Video</h2>
 
 <div class="video">
@@ -70,26 +63,24 @@ objects are not explicitly given but instead predicted from observations.
 </div>
 <br/>
 
+<div class="demo-grid">
+<section class="demo-card">
 <h2>ICRA Conference Presentation</h2>
 
-<div class="video">
+<div class="video additional-video">
     <iframe width="560" height="315" src="{{page.video3}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <br/>
-
-
-<h2>Code and Dataset</h2>
-
-<p>Code and dataset is available at <a href="https://github.com/Fzaero/BRDPN"><em>https://github.com/Fzaero/BRDPN</em></a></p>
-
-<br/>
-
+</section>
+<section class="demo-card">
 <h2>Further Experiments</h2>
 
 <p> In here, we model trajectory of PCB given up to 4 obstacles next to its sides. Physic predictor can predict trajectory(position and quaternion) of lever-upped PCB, given 500 training trajectory.</p> 
 
-<div class="video">
+<div class="video additional-video">
     <iframe width="560" height="315" src="{{page.video2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <br/>
+</section>
+</div>

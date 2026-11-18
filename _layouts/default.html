@@ -1,27 +1,23 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     {% include navigation.html %}
     <br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-1">   
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-3">
-                {% include profile.html %}
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-6">
-                {{ content }}
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-2">
-            </div>
-        </div>
+    <div class="site-layout">
+      <aside class="profile-column">
+        {% include profile.html %}
+      </aside>
+      <main class="site-content">
+        {{ content }}
+      </main>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,0 +1,15 @@
+{%- assign destination = include.url | downcase -%}
+{%- assign path = destination | split: '?' | first | split: '#' | first -%}
+{%- assign extension = path | split: '.' | last -%}
+{%- if destination contains 'arxiv.org/' -%}
+  {%- assign label = 'arXiv' -%}
+{%- elsif extension == 'pdf' -%}
+  {%- assign label = 'PDF' -%}
+{%- elsif destination contains 'ieeexplore.ieee.org/' -%}
+  {%- assign label = 'IEEE Xplore' -%}
+{%- elsif destination contains 'sciencedirect.com/' -%}
+  {%- assign label = 'ScienceDirect' -%}
+{%- else -%}
+  {%- assign label = 'Publication' -%}
+{%- endif -%}
+<a href="{{ include.url | escape }}">[{{ label }}]</a>

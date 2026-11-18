@@ -1,0 +1,10 @@
+{% assign paper = include.paper %}
+<div class="publication-links{% if include.project %} project-links{% endif %}">
+  {% unless include.project %}{% if paper.website %}<a href="{{ paper.website | escape }}">[Project page]</a>{% endif %}{% endunless %}
+  {% if paper.video %}<a href="{{ paper.video | escape }}">[Video]</a>{% endif %}
+  {% if paper.code %}<a href="{{ paper.code | escape }}">[Code]</a>{% endif %}
+  {% if paper.colab %}<a href="{{ paper.colab | escape }}">[Colab]</a>{% endif %}
+  {% if paper.link and paper.link != paper.pdf %}{% include paper-link.html url=paper.link %}{% endif %}
+  {% if paper.pdf %}{% include paper-link.html url=paper.pdf %}{% endif %}
+  {% if paper.arxiv %}<a href="{{ paper.arxiv | escape }}">[arXiv]</a>{% endif %}
+</div>

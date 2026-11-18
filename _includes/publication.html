@@ -1,0 +1,8 @@
+    <li class="publication-entry">
+      <div class="publication-title">{{ pub.name }}</div>
+      {{ pub.authors }}<br>
+      {{ pub.published_at}},{% if pub.published_at != "Under Review" %}&nbsp;  {{ pub.date | date: "%Y"}} {% endif %}<br>
+      {% if pub.special %} <b> {{ pub.special }}</b><br>{% endif %}
+      {% include publication-links.html paper=pub %}
+
+    </li>

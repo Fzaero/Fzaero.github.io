@@ -1,0 +1,2 @@
+{% assign project_publication = site.publications | where: "website", page.permalink | first %}
+{% include publication-links.html paper=project_publication project=true %}
