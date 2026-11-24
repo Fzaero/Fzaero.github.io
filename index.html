@@ -34,15 +34,19 @@ title: Home
     to acquire, adapt, and reuse manipulation skills. I am also interested in leveraging pretrained
     visual and multimodal representations to improve generalization across objects, tasks, and environments.
 </p>
-<h3>News</h3>
-<ul>
-    {% assign ordered_news = site.news | sort:"date" | reverse %}
+<h3 id="news-heading">News</h3>
+{% assign ordered_news = site.news | sort:"date" | reverse %}
+<div id="news-window" class="news-window" role="region" aria-labelledby="news-heading">
+  <ul class="news-list">
     {% for new in ordered_news %}
-      <li>
-        {{ new.post }}
-      </li>
+      <li>{{ new.post }}</li>
     {% endfor %}
   </ul>
+</div>
+{% if ordered_news.size > 3 %}
+<p id="news-scroll-hint" class="news-scroll-hint" hidden>Scroll for older news ↓</p>
+<script src="/assets/js/news.js" defer></script>
+{% endif %}
 <h3>Videos</h3>
 {% assign video_list = site.videos | sort: "order" %}
 <div class="home-video-grid">
