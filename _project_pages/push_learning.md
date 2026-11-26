@@ -98,12 +98,12 @@ supplementary_video: https://www.youtube.com/embed/k7UfzV1JNYo
 	<a href="/">A. E. Tekden<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://aykuterdem.github.io/">A. Erdem<sup>2</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://web.cs.hacettepe.edu.tr/~erkut/">E. Erdem<sup>3</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://h2t.anthropomatik.kit.edu/21_2372.php">T. Asfour<sup>4</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://www.cmpe.boun.edu.tr/~emre/">E. Ugur<sup>1</sup></a><br><br>
+	<a href="https://h2t.iar.kit.edu/tamim-asfour.php">T. Asfour<sup>4</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://emreugur.org/">E. Ugur<sup>1</sup></a><br><br>
 	<a href="http://colors.cmpe.boun.edu.tr/"><b><sup>1</sup>Boun CoLoRs</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://ai.ku.edu.tr/"><b><sup>2</sup>KUIS AI</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://vision.cs.hacettepe.edu.tr/"><b><sup>3</sup>HUCVL</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://h2t.anthropomatik.kit.edu/"><b><sup>4</sup>(H²T)</b></a> <br>
+	<a href="https://h2t.iar.kit.edu/"><b><sup>4</sup>(H²T)</b></a> <br>
 
 </center>
 {% include project-links.html %}

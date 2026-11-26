@@ -14,11 +14,11 @@ video3: https://www.youtube.com/embed/1U3PmZ0m_0I
 <h1 class="project-title">Belief Regulated Dual Propagation Nets for Learning Action  Effects on Articulated Multi-Part Object</h1>
 <br> 
 	<a href="/">A. E. Tekden<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://web.cs.hacettepe.edu.tr/~aykut/">A. Erdem<sup>2</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://aykuterdem.github.io/">A. Erdem<sup>2</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://web.cs.hacettepe.edu.tr/~erkut/">E. Erdem<sup>2</sup></a><br>
 	<a href="https://mertimre.github.io/">M. Imre<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://scholar.google.com/citations?user=H8NkqvQAAAAJ&hl=tr">M. Y. Seker<sup>1</sup></a> &nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://www.cmpe.boun.edu.tr/~emre/">E. Ugur<sup>1</sup></a><br><br>
+	<a href="https://emreugur.org/">E. Ugur<sup>1</sup></a><br><br>
 	<a href="http://colors.cmpe.boun.edu.tr/"><b><sup>1</sup>Boun CoLoRs</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="https://vision.cs.hacettepe.edu.tr/"><b><sup>2</sup>HUCVL</b></a> <br>
 </center>
